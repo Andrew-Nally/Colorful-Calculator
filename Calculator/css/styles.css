@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+html{
+    font-size: 70%;
+    box-sizing:border-box;
+}
+
+*, *::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing:inherit;
+    font-family: 'Permanent Marker', cursive;
+
+}
+
+.calculator{
+    border: 1.2px solid darkslategray;
+    border-radius:7px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:500px;
+    background:url("./blue.jpg");
+}
+.operator{
+    background:url(./lime.jpg);
+    cursor: pointer;
+    color:rgb(78, 0, 122);
+
+}
+.calculator-screen{
+    width:100%;
+    font-size: 5rem;
+    height:80px;
+    border:none;
+    background:url("orange.jpeg");
+    color:rgb(78, 0, 122);
+    text-align: right;
+    padding-right:20px;
+    margin-top:7%;
+    padding-left:20px;
+}
+
+button{
+    height:70px;
+    border-radius:3px;
+    border:1px solid darkslategray;
+    background-color: transparent;
+    font-size:3.2rem;
+    color:rgb(239, 243, 6);
+    background-image:url(./pink.jpeg);
+   
+    background-color: lightgray;
+}
+
+.all-clear{
+    background: url("purple.jpg");
+    border-color:darkslategray;
+    color:rgba(248, 112, 0, 0.76);
+    cursor: pointer;
+}
+.all-clear:hover{
+    background-color: darkred;
+
+}
+
+.equal-sign{
+    background:url(./lime.jpg);
+    border-color:darkslategray;
+    color:rgb(100, 1, 139);
+    height:100%;
+    grid-area: 2 / 4 / 6 / 5;
+    cursor: pointer;
+    outline:none;
+
+}
+
+.equal-sign:hover {
+    background-color:darkblue;
+
+}
+
+
+    .calculator-keys{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap:20px;
+        padding:20px;
+        
+
+    }
